@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="title"
+      content="Antonio González Garrido - Desarrollador de aplicaciones móviles, web y escritorio"
+    />
+    <meta
+      name="description"
+      content="Antonio González Garrido, Programador Informático. Desarrollador de software bajo multitud de lenguajes y plataformas. Desarrollo de aplicaciones web PHP, Javascript, MySQL. Desarrollo de aplicaciones para escritorio con Java, Python, C++. Desarrollo de aplicaciones móviles. Diseño y programación de aplicaciones. Desarrollador en Extremadura. Programador en Extremadura."
+    />
+    <meta
+      name="keywords"
+      content="programador web, programador informático, programación, desarrollo de aplicaciones informaticas, programador php, programador java, programador web, programador javascript, programador python, programador c++, diseño gráfico, diseño web"
+    />
+    <meta name="author" content="Antonio González Garrido" />
+    <title>
+      Antonio González Garrido - Desarrollador de aplicaciones móviles, web y
+      escritorio
+    </title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#ff0043"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- CSS critico -->
+    <style>
+      .is-loading {
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+      }
+      .loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition-duration: 300ms;
+        -moz-transition-duration: 300ms;
+        -o-transition-duration: 300ms;
+        transition-duration: 300ms;
+      }
+      .is-loading .loader {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition-duration: 300ms;
+        -moz-transition-duration: 300ms;
+        -o-transition-duration: 300ms;
+        transition-duration: 300ms;
+      }
+      .lds-dual-ring {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        border-color: #fff transparent #ff0043 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="is-loading"
+    data-spy="scroll"
+    data-target="#navbarNav"
+    data-offset="200"
+  >
+    <div id="home-top"></div>
+
+    <!-- Header -->
+    <header class="fixed-top header-hidden">
+      <nav
+        id="main-nav"
+        class="navbar navbar-expand-lg navbar-light bg-light trans-300"
+      >
+        <div class="container">
+          <a class="navbar-brand trans-300" href="/">
+            <img
+              id="largePositiveIcon"
+              src="img/logo-positivo-largo.svg"
+              style="height: 40px"
+              alt="Antonio González Garrido, Programador Web y Móvil"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div id="navbarNav" class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto navbar-right">
+              <li class="nav-item">
+                <a href="#home-top" class="nav-link scroll-to">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link scroll-to">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link scroll-to">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link scroll-to">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link scroll-to">Contacta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section
+      id="home"
+      class="full-height-section wow fadeIn"
+      data-wow-delay="0.5s"
+    >
+      <div class="backdrop"></div>
+      <div class="flex-center">
+        <a
+          href="javascript:void(0);"
+          class="home-logo wow fadeInDown"
+          data-wow-delay="0.7s"
+          ><img src="img/logo-negativo.svg" alt="Antonio González Garrido"
+        /></a>
+      </div>
+    </section>
+
+    <!-- Home menu -->
+    <div class="home-menu wow fadeIn" data-wow-delay="0.7s">
+      <div class="row">
+        <div class="col-8 col-xl-7">
+          <div class="home-menu-left">
+            <div class="backdrop"></div>
+            <ul>
+              <li class="active">
+                <a href="#home-top" class="scroll-to">Inicio</a>
+              </li>
+              <li><a href="#about" class="scroll-to">Sobre mí</a></li>
+              <li><a href="#skills" class="scroll-to">Habilidades</a></li>
+              <li><a href="#portfolio" class="scroll-to">Portfolio</a></li>
+              <li><a href="#contact" class="scroll-to">Contacta</a></li>
+              <li class="separator d-none"></li>
+              <li class="lang-link active d-none">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Español"
+                  >ES</a
+                >
+              </li>
+              <li class="lang-link d-none">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="English"
+                  >EN</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 col-xl-5">
+          <div class="home-menu-right">
+            <div class="backdrop"></div>
+            <ul>
+              <li>
+                <a
+                  href="https://es.linkedin.com/in/antoniogonzalezgarrido"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Sígueme en LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/AntonioGonz%C3%A1lezGarrido"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Sígueme en Youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/authc0d3"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Sígueme en GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://gitlab.com/authcode"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Sígueme en GitLab"
+                >
+                  <i class="fab fa-gitlab"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Separador para home -->
+    <div class="home-separator"></div>
+
+    <!-- About Me -->
+    <section id="about" class="page-section">
+      <div class="row">
+        <div
+          class="col-lg-4 col-xl-5 align-self-stretch me wow fadeInLeft"
+          data-wow-delay="2.2s"
+        ></div>
+        <div class="col-lg-8 col-xl-7 wow fadeInRight" data-wow-delay="2.2s">
+          <div class="page-section-text">
+            <h2 class="page-section-title">Sobre mí</h2>
+            <p class="text-justify">
+              Soy programador informático, especializado en
+              <strong
+                >desarrollo de aplicaciones para la web y dispositivos
+                móviles</strong
+              >, aunque también he realizado algún que otro proyecto de
+              <strong>aplicaciones para escritorio en diversos lenguajes</strong
+              >.
+            </p>
+            <p class="text-justify">
+              Me considero una <strong>persona creativa y autodidacta</strong>,
+              me gusta
+              <strong
+                >estar al día y probar cada lenguaje, framework o librería
+                nueva</strong
+              >
+              que pueda ampliar mi conocimiento y mejorar la calidad de los
+              proyectos de
+              <strong
+                >la empresa donde trabajo,
+                <a href="https://www.codeoscopic.com/" target="_blank"
+                  >Codeoscopic</a
+                ></strong
+              >, en la que actualmente me encuentro desarrollando la nueva
+              versión del multitarificador
+              <strong>Avant2 Sales Manager</strong>, formando parte de un
+              <strong>equipo multidisciplinar de desarrolladores</strong>,
+              utilizando los últimos avances en tecnologías web
+              <strong>(React, TypeScript, NodeJS, etc.)</strong> en un entorno
+              de <strong>desarrollo ágil</strong>.
+            </p>
+            <p class="text-justify">
+              <strong>Mi tiempo libre lo dedico</strong> siempre que puedo
+              <strong
+                >a viajar, estar con mi familia, salir con los amigos, leer, ir
+                al cine o al teatro, subir videos a
+                <a
+                  href="https://www.youtube.com/c/AntonioGonzálezGarrido"
+                  target="_blank"
+                  >mi canal de Youtube</a
+                ></strong
+              >, frikear con mi PS4 y sacar provecho de mis suscripción a
+              Spotify mientras
+              <strong>aprendo cosas sobre nuevas tecnologías en internet</strong
+              >.
+            </p>
+            <div class="row" style="margin-top: 45px">
+              <div class="col-sm-3 col-6 wow fadeInRight" data-wow-delay="0.4s">
+                <div
+                  class="hexagon hexagon-code"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Programar me apasiona"
+                >
+                  <div class="hexTop"></div>
+                  <div class="hexBottom"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 wow fadeInRight" data-wow-delay="0.6s">
+                <div
+                  class="hexagon hexagon-graphic"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Amo el diseño gráfico"
+                >
+                  <div class="hexTop"></div>
+                  <div class="hexBottom"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 wow fadeInRight" data-wow-delay="0.8s">
+                <div
+                  class="hexagon hexagon-creative"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Soy creativo y autodidacta"
+                >
+                  <div class="hexTop"></div>
+                  <div class="hexBottom"></div>
+                </div>
+              </div>
+              <div class="col-sm-3 col-6 wow fadeInRight" data-wow-delay="1s">
+                <div
+                  class="hexagon hexagon-joystick"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="100% Freak"
+                >
+                  <div class="hexTop"></div>
+                  <div class="hexBottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador: Teclado -->
+    <div id="ss1" class="section-separator"></div>
+
+    <!-- Skills -->
+    <section id="skills" class="page-section page-section-padding">
+      <div class="container">
+        <div class="wow fadeInRight" data-wow-delay="0.7s">
+          <h2 class="page-section-title">Conocimientos & Habilidades</h2>
+        </div>
+        <div class="wow fadeIn mb-5" data-wow-delay="0.7s">
+          <p class="text-justify">
+            Mi principal área de conocimiento y dedicación a día de hoy es el
+            <strong
+              >diseño y programación fullstack de aplicaciones realizadas con
+              tecnología web</strong
+            >, desde landing pages y SPAs hasta
+            <strong>complejos portales y tiendas online</strong>, así como
+            <strong>desarrollo de plantillas y plugins</strong> para CMSs como
+            <strong>WordPress o Prestashop</strong>, además de realizar tareas
+            de <strong>configuración y automatización CI/CD</strong> de las
+            mismas en <strong>servidores web</strong> o en servicios en la nube
+            como <strong>AWS, Digital Ocean o Heroku</strong>.
+          </p>
+          <p class="text-justify">
+            Otra de mis actividades principales es el
+            <strong>desarrollo de juegos y aplicaciones móviles</strong> bajo
+            <strong>Android e iOS</strong>, tanto híbridas como nativas, algunas
+            apoyadas en <strong>servicios RESTful</strong>, utilizando
+            <strong>bases de datos relacionales y documentales</strong> o
+            servicios en la nube como <strong>Firebas o Firestore</strong>.
+          </p>
+          <p class="text-justify">
+            Además,
+            <strong>realizo aplicaciones multiplataforma</strong> utilizando
+            lenguajes como <strong>Java o Python</strong> y otras mediante
+            <strong>tecnología web con JavaScript</strong>
+            utilizando frameworks como
+            <strong
+              >Ionic, Flutter, NativeScript, Electron, React Native, Angular,
+              Vue ó Nuxt</strong
+            >.
+          </p>
+          <p class="text-justify">
+            También dispongo de
+            <strong>habilidades y amplia experiencia en diseño gráfico</strong>
+            utilizando herramientas como
+            <strong
+              >Adobe Photoshop CC, Adobe Illustratorc CC, Gimp, Inkscape y Corel
+              Draw</strong
+            >
+            entre otros.
+          </p>
+        </div>
+        <div class="wow fadeIn" data-wow-delay="0.7s">
+          <h4 class="page-section-subtitle">Lenguajes</h4>
+        </div>
+        <div class="logos wow fadeIn mb-5" data-wow-delay="0.7s">
+          <img
+            src="img/logos/languages/ts.svg"
+            alt="TypeScript"
+            title="TypeScript"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/js.svg"
+            alt="JavaScript"
+            title="JavaScript"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/php.svg"
+            alt="PHP"
+            title="PHP"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/python.svg"
+            alt="Python"
+            title="Python"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/go.svg"
+            alt="Go"
+            title="Go"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/java.svg"
+            alt="Java"
+            title="Java"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/dart.svg"
+            alt="Dart"
+            title="Dart"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/cpp.svg"
+            alt="Cpp"
+            title="C++"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/kotlin.svg"
+            alt="Kotlin"
+            title="Kotlin"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/html5.svg"
+            alt="HTML5"
+            title="HTML5"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/css3.svg"
+            alt="CSS3"
+            title="CSS3"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/sass.svg"
+            alt="Sass"
+            title="Sass"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/less.svg"
+            alt="Less"
+            title="Less"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/languages/markdown.svg"
+            alt="Markdown"
+            title="Markdown"
+            data-toggle="tooltip"
+          />
+        </div>
+        <div class="wow fadeIn" data-wow-delay="0.7s">
+          <h4 class="page-section-subtitle">Frameworks y Librerías</h4>
+        </div>
+        <div class="logos wow fadeIn mb-5" data-wow-delay="0.7s">
+          <img
+            src="img/logos/frameworks/react-2.svg"
+            alt="React / React Native"
+            title="React / React Native"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/angular-icon-1.svg"
+            alt="Angular"
+            title="Angular"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/vue-9.svg"
+            alt="Vue"
+            title="Vue"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/svelte-1.svg"
+            alt="Svelte"
+            title="Svelte"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/ionic.svg"
+            alt="Ionic Framework"
+            title="Ionic Framework"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/electron-1.svg"
+            alt="Electron"
+            title="Electron"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/nextjs-2.svg"
+            alt="Next.js"
+            title="Next.js"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/gatsby.svg"
+            alt="Gastby"
+            title="Gastby"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/nuxt-2.svg"
+            alt="Nuxt"
+            title="Nuxt"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/redux.svg"
+            alt="Redux"
+            title="Redux"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/rxjs-1.svg"
+            alt="RxJS"
+            title="RxJS"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/graphql.svg"
+            alt="GraphQL"
+            title="GraphQL"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/express-109.svg"
+            alt="Express"
+            title="Express"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/fastify.svg"
+            alt="Fastify"
+            title="Fastify"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/nest.svg"
+            alt="NestJS"
+            title="NestJS"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/tailwindcss.svg"
+            alt="Tailwind CSS"
+            title="Tailwind CSS"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/bootstrap-5-1.svg"
+            alt="Bootstrap"
+            title="Bootstrap"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/bulma.svg"
+            alt="Bulma"
+            title="Bulma"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/antd.svg"
+            alt="Ant Design"
+            title="Ant Design"
+            data-toggle="tooltip"
+          />
+
+          <img
+            src="img/logos/frameworks/styled-components-1.svg"
+            alt="Styled Components"
+            title="Styled Components"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/laravel-1.svg"
+            alt="Laravel"
+            title="Laravel"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/symfony.svg"
+            alt="Symfony"
+            title="Symfony"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/django.svg"
+            alt="Django"
+            title="Django"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/flask.svg"
+            alt="Flask"
+            title="Flask"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/frameworks/spring-3.svg"
+            alt="Spring / Spring Boot"
+            title="Spring / Spring Boot"
+            data-toggle="tooltip"
+          />
+        </div>
+        <div class="wow fadeIn" data-wow-delay="0.7s">
+          <h4 class="page-section-subtitle">Bases de Datos</h4>
+        </div>
+        <div class="logos wow fadeIn mb-5" data-wow-delay="0.7s">
+          <img
+            src="img/logos/databases/mysql-6.svg"
+            alt="MySQL"
+            title="MySQL"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/mariadb.svg"
+            alt="MariaDB"
+            title="MariaDB"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/postgresql.svg"
+            alt="PostgreSQL"
+            title="PostgreSQL"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/oracle-6.svg"
+            alt="Oracle"
+            title="Oracle"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/sqlserver.svg"
+            alt="Microsoft SQL Server"
+            title="Microsoft SQL Server"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/sqlite.svg"
+            alt="SQLite"
+            title="SQLite"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/mongodb-icon-1.svg"
+            alt="MongoDB"
+            title="MongoDB"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/databases/microsoft-access-1.svg"
+            alt="Microsoft Access"
+            title="Microsoft Access"
+            data-toggle="tooltip"
+          />
+        </div>
+        <div class="wow fadeIn" data-wow-delay="0.7s">
+          <h4 class="page-section-subtitle">Software & Servicios</h4>
+        </div>
+        <div class="logos wow fadeIn" data-wow-delay="0.7s">
+          <img
+            src="img/logos/others/visual-studio-code.svg"
+            alt="Visual Studio Code"
+            title="Visual Studio Code"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/intellij-idea-1.svg"
+            alt="IntelliJ Idea"
+            title="IntelliJ Idea"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/phpstorm-1.svg"
+            alt="PhpStorm"
+            title="PhpStorm"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/eclipse-11.svg"
+            alt="Eclipse"
+            title="Eclipse"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/netbeans.svg"
+            alt="Apache Netbeans"
+            title="Apache Netbeans"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/atom-4.svg"
+            alt="Atom"
+            title="Atom"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/photoshop-cc-4.svg"
+            alt="Adobe Photoshop"
+            title="Adobe Photoshop"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/adobe-illustrator-cc-2019.svg"
+            alt="Adobe Illustrator"
+            title="Adobe Illustrator"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/premiere-cc.svg"
+            alt="Adobe Premiere"
+            title="Adobe Premiere"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/adobe-xd.svg"
+            alt="Adobe XD"
+            title="Adobe XD"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/gimp.svg"
+            alt="Gimp"
+            title="Gimp"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/blender-2.svg"
+            alt="Blender"
+            title="Blender"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/android-studio.svg"
+            alt="Android Studio"
+            title="Android Studio"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/xcode.png"
+            alt="XCode"
+            title="XCode"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/unity-69.svg"
+            alt="Unity"
+            title="Unity"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/docker-3.svg"
+            alt="Docker"
+            title="Docker"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/figma-1.svg"
+            alt="Figma"
+            title="Figma"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/zeplin.svg"
+            alt="Zeplin"
+            title="Zeplin"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/webpack.svg"
+            alt="Webpack"
+            title="Webpack"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/babel-10.svg"
+            alt="Babel"
+            title="Babel"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/vite.svg"
+            alt="Vite"
+            title="Vite"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/firebase-1.svg"
+            alt="Firebase"
+            title="Firebase"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/supabase.svg"
+            alt="Supabase"
+            title="Supabase"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/git.svg"
+            alt="Git"
+            title="Git"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/github-icon-1.svg"
+            alt="GitHub"
+            title="GitHub"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/gitlab.svg"
+            alt="GitLab"
+            title="GitLab"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/aws-2.svg"
+            alt="Amazon Web Services"
+            title="Amazon Web Services"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/digitalocean-icon-1.svg"
+            alt="Digital Ocean"
+            title="Digital Ocean"
+            data-toggle="tooltip"
+          />
+          <img
+            src="img/logos/others/heroku-1.svg"
+            alt="Heroku"
+            title="Heroku"
+            data-toggle="tooltip"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Separador: Codigo -->
+    <div id="ss2" class="section-separator"></div>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="page-section page-section-padding">
+      <div class="container">
+        <div class="wow fadeIn" data-wow-delay="0.7s">
+          <h2 class="page-section-title">Portfolio</h2>
+        </div>
+        <p class="wow fadeIn" data-wow-delay="0.7s">
+          Además de las webs, portales y aplicaciones móviles realizadas en las
+          empresas en las que he trabajado, también cuento con algunos proyectos
+          personales realizados en mi tiempo libre. Algunos de estos proyectos
+          son:
+        </p>
+        <div
+          class="owl-portfolio owl-carousel owl-theme wow fadeIn"
+          data-wow-delay="0.7s"
+          style="margin-top: 30px"
+        >
+          <a
+            href="javascript:void(0);"
+            class="portfolio-item"
+            data-toggle="modal"
+            data-target="#curso-ionic"
+          >
+            <img src="img/curso-ionic.jpg" />
+            <span class="pi-shadow"></span>
+            <span class="pi-tag"
+              ><i class="material-icons">videocam</i> <span>Youtube</span></span
+            >
+            <span class="pi-text">
+              <h4>Curso Ionic & Firestore</h4>
+              <p>Creación de aplicación híbrida usando Ionic y Firestore.</p>
+            </span>
+          </a>
+          <a
+            href="javascript:void(0);"
+            class="portfolio-item"
+            data-toggle="modal"
+            data-target="#web-coalpe"
+          >
+            <img src="img/coalpe.jpg" />
+            <span class="pi-shadow"></span>
+            <span class="pi-tag"
+              ><i class="material-icons">language</i> <span>Website</span></span
+            >
+            <span class="pi-text">
+              <h4>Website Coalpe.com</h4>
+              <p>Sitio web corporativo con diseño a medida.</p>
+            </span>
+          </a>
+          <a
+            href="javascript:void(0);"
+            class="portfolio-item"
+            data-toggle="modal"
+            data-target="#web-boda"
+          >
+            <img src="img/web-boda.jpg" />
+            <span class="pi-shadow"></span>
+            <span class="pi-tag"
+              ><i class="material-icons">language</i> <span>Website</span></span
+            >
+            <span class="pi-text">
+              <h4>Website Inmaynono.es</h4>
+              <p>Wedding website con información para los invitados</p>
+            </span>
+          </a>
+          <a
+            href="javascript:void(0);"
+            class="portfolio-item"
+            data-toggle="modal"
+            data-target="#semana-santa"
+          >
+            <img src="img/app-semana-santa.jpg" />
+            <span class="pi-shadow"></span>
+            <span class="pi-tag"
+              ><i class="material-icons">android</i> <span>Android</span></span
+            >
+            <span class="pi-text">
+              <h4>Semana Santa de Zafra</h4>
+              <p>Aplicación informativa, con alertas y contenido multimedia.</p>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Curso Ionic -->
+    <div id="curso-ionic" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="material-icons">videocam</i> Curso de Ionic & Firestore
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5 order-lg-2">
+                <a
+                  href="https://www.youtube.com/watch?v=JvDB9WU_pDo&list=PLYFFT0rqpU5pPD3j8kTzvruN0KDE1vGAw"
+                  title="Curso Ionic"
+                  target="_blank"
+                  class="portfolio-image"
+                >
+                  <img src="img/curso-ionic.jpg" />
+                  <span class="portfolio-image-shadow"></span>
+                </a>
+              </div>
+              <div class="col-lg-7 order-lg-1">
+                <p class="text-justify">
+                  <strong>Curso online gratuito</strong> en el que muestro como
+                  <strong>crear una aplicación híbrida</strong> utilizando
+                  <strong>Ionic</strong> y el servicio
+                  <strong>Firestore</strong> de Google.
+                </p>
+                <p class="text-justify">
+                  La aplicación creada en el curso es una app sencilla a modo de
+                  lista de tareas, la cuál es perfecta para mostrar cómo
+                  <strong>realizar las operaciones básicas con Firestore</strong
+                  >.
+                </p>
+                <p class="text-justify">
+                  En el curso también enseño como
+                  <strong>instalar NodeJS e Ionic</strong>, así como a
+                  <strong>crear un proyecto Firestore</strong>.
+                </p>
+              </div>
+            </div>
+            <div style="margin: 15px 0px">
+              <span class="badge badge-danger">#HybridMobileApp</span>
+              <span class="badge badge-danger">#IonicFramework</span>
+              <span class="badge badge-danger">#Firestore</span>
+              <span class="badge badge-danger">#Angular</span>
+              <span class="badge badge-danger">#TypeScript</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group" role="group">
+              <a
+                href="https://www.youtube.com/watch?v=JvDB9WU_pDo&list=PLYFFT0rqpU5pPD3j8kTzvruN0KDE1vGAw"
+                target="_blank"
+                class="btn btn-outline-danger"
+                ><i class="fa fa-share"></i> Ir al curso</a
+              >
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=JvDB9WU_pDo&list=PLYFFT0rqpU5pPD3j8kTzvruN0KDE1vGAw"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Facebook"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/home?status=https://www.youtube.com/watch?v=JvDB9WU_pDo&list=PLYFFT0rqpU5pPD3j8kTzvruN0KDE1vGAw"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Twitter"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.youtube.com/watch?v=JvDB9WU_pDo&list=PLYFFT0rqpU5pPD3j8kTzvruN0KDE1vGAw"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en LinkedIn"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Web Boda -->
+    <div id="web-boda" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="material-icons">language</i> Website Boda I&A
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5 order-lg-2">
+                <a
+                  href="https://www.youtube.com/watch?v=sNhO6KQ6LPk"
+                  title="Web Boda"
+                  target="_blank"
+                  class="portfolio-image"
+                >
+                  <img src="img/web-boda.jpg" />
+                  <span class="portfolio-image-shadow"></span>
+                </a>
+              </div>
+              <div class="col-lg-7 order-lg-1">
+                <p class="text-justify">
+                  <strong>Sitio web informativo</strong> que realicé con motivo
+                  de mi boda y el cual sirvió como información ampliada para los
+                  invitados. Está diseñado con
+                  <strong
+                    >técnicas responsive para adaptarlo a todos los
+                    dispositivos</strong
+                  >, maquetado y programado utilizando
+                  <strong>HTML5, CSS3 y Javascript</strong>.
+                </p>
+                <p class="text-justify">
+                  Un aspecto a destacar de esta web es la
+                  <strong>conexión con el API de Google Maps</strong>, el cual
+                  utilicé para que los invitados pudieran calcular e impimir las
+                  rutas hasta la Iglesia y el restaurante.
+                </p>
+              </div>
+            </div>
+            <div style="margin: 15px 0px">
+              <span class="badge badge-danger">#Website</span>
+              <span class="badge badge-danger">#HTML5</span>
+              <span class="badge badge-danger">#CSS3</span>
+              <span class="badge badge-danger">#Javascript</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group" role="group">
+              <a
+                href="https://www.youtube.com/watch?v=sNhO6KQ6LPk"
+                target="_blank"
+                class="btn btn-outline-danger"
+                ><i class="fa fa-share"></i> Ver video</a
+              >
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=sNhO6KQ6LPk"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Facebook"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/home?status=https://www.youtube.com/watch?v=sNhO6KQ6LPk"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Twitter"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.youtube.com/watch?v=sNhO6KQ6LPk&summary=&source="
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en LinkedIn"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Web Coalpe -->
+    <div id="web-coalpe" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="material-icons">language</i> Website Coalpe.com
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5 order-lg-2">
+                <a
+                  href="https://coalpe.com/"
+                  title="Web Boda"
+                  target="_blank"
+                  class="portfolio-image"
+                >
+                  <img src="img/coalpe.jpg" />
+                  <span class="portfolio-image-shadow"></span>
+                </a>
+              </div>
+              <div class="col-lg-7 order-lg-1">
+                <p class="text-justify">
+                  <strong>Sitio web corporativo</strong>, donde además de
+                  trabajar en el diseño y desarrollo, estuve también al cargo
+                  del apartado fotográfico correspondiente a las instalaciones.
+                </p>
+                <p>
+                  La web está realizada con WordPress, montando una
+                  <strong
+                    >plantilla diseñada y maquetada a medida desde cero</strong
+                  >
+                  mediante
+                  <strong
+                    >técnicas responsive para adaptarla a todos los
+                    dispositivos</strong
+                  >, utilizando
+                  <strong>HTML5, CSS3 y Javascript</strong>
+                </p>
+              </div>
+            </div>
+            <div style="margin: 15px 0px">
+              <span class="badge badge-danger">#Website</span>
+              <span class="badge badge-danger">#HTML5</span>
+              <span class="badge badge-danger">#CSS3</span>
+              <span class="badge badge-danger">#JavaScript</span>
+              <span class="badge badge-danger">#WordPress</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group" role="group">
+              <a
+                href="https://coalpe.com/"
+                target="_blank"
+                class="btn btn-outline-danger"
+                ><i class="fa fa-share"></i> Visitar Web</a
+              >
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://coalpe.com/"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Facebook"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/home?status=https://coalpe.com/"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Twitter"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://coalpe.com/&summary=&source="
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en LinkedIn"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal App Semana Santa -->
+    <div id="semana-santa" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="material-icons">android</i> App Semana Santa de Zafra
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5 order-lg-2">
+                <a
+                  href="https://www.youtube.com/watch?v=pnZkNupvb-4"
+                  title="App Semana Santa de Zafra"
+                  target="_blank"
+                  class="portfolio-image"
+                >
+                  <img src="img/app-semana-santa.jpg" />
+                  <span class="portfolio-image-shadow"></span>
+                </a>
+              </div>
+              <div class="col-lg-7 order-lg-1">
+                <p class="text-justify">
+                  <strong>Aplicación informativa</strong> sobre la Semana Santa
+                  de Zafra (Badajoz). Contenía información sobre las distintas
+                  cofradías, itinerarios, bandas de música, horarios de culto,
+                  información turística, información atmosférica del municipio,
+                  alertas de última hora, galería de fotos y vídeos además de
+                  opciones para compartir contenidos en redes sociales.
+                </p>
+                <p class="text-justify">
+                  Se trata de una <strong>aplicación híbrida</strong> para
+                  móviles Android que estuvo disponible en Google Play de 2015 a
+                  2017, con versión WebApp para iOS y navegadores web. Cuontaba
+                  con <strong>conexión a Google Maps</strong> para los
+                  itinerários y con el
+                  <strong
+                    >API de Youtube para extraer información de los
+                    videos</strong
+                  >
+                  que incluía.
+                </p>
+              </div>
+            </div>
+            <div style="margin: 15px 0px">
+              <span class="badge badge-danger">#MobileApps</span>
+              <span class="badge badge-danger">#HybridApp</span>
+              <span class="badge badge-danger">#IonicFramework</span>
+              <span class="badge badge-danger">#Android</span>
+              <span class="badge badge-danger">#iOS</span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-group" role="group">
+              <a
+                href="https://www.youtube.com/watch?v=pnZkNupvb-4"
+                target="_blank"
+                class="btn btn-outline-danger"
+                ><i class="fa fa-share"></i> Ver video</a
+              >
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=pnZkNupvb-4"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Facebook"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/home?status=https://www.youtube.com/watch?v=pnZkNupvb-4"
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en Twitter"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.youtube.com/watch?v=pnZkNupvb-4&title=App%20Semana%20Santa%20Zafra&summary=&source="
+                target="_blank"
+                class="btn btn-outline-danger"
+                title="Compartir en LinkedIn"
+                data-toggle="tooltip"
+                data-placement="top"
+                data-container="body"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Separador: Cables -->
+    <div id="ss3" class="section-separator"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="page-section page-section-padding">
+      <div class="container wow fadeIn" data-wow-delay="0.7s">
+        <h2 class="page-section-title wow fadeInLeft" data-wow-delay="0.7s">
+          Contacta
+        </h2>
+        <div class="row">
+          <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.7s">
+            <p class="text-justify">
+              Puedes contactar conmigo a través de e-mail o meidante LinkedIn:
+            </p>
+            <ul class="contact-list mb-4">
+              <li>
+                <a href="mailto:agonzalezgarrido@outlook.com" target="_blank"
+                  ><i class="fa fa-envelope"></i>agonzalezgarrido@outlook.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://es.linkedin.com/in/antoniogonzalezgarrido"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i>Antonio González, Web &
+                  Mobile Developer</a
+                >
+              </li>
+            </ul>
+            <p class="text-justify">
+              Si lo deseas, también puedes ver algunos de mis proyectos
+              personales en mi GitHub y GitLab:
+            </p>
+            <ul class="contact-list">
+              <li>
+                <a href="https://github.com/authc0d3" target="_blank"
+                  ><i class="fab fa-github"></i>github.com/authc0d3</a
+                >
+              </li>
+              <li>
+                <a href="https://gitlab.com/authcode" target="_blank"
+                  ><i class="fab fa-gitlab"></i>gitlab.com/authcode</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-5 text-center wow fadeInRight"
+            data-wow-delay="0.7s"
+          >
+            <i
+              class="far fa-comments contact-comments d-none d-md-inline-block"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            &copy; 2021 Antonio González. Todos los derechos reservados.
+            <a
+              href="javascript:void(0);"
+              data-toggle="modal"
+              data-target="#privacity-modal"
+              >Privacidad</a
+            >
+            -
+            <a
+              href="javascript:void(0);"
+              data-toggle="modal"
+              data-target="#cookies-modal"
+              >Cookies</a
+            >
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-social">
+              <a
+                href="https://es.linkedin.com/in/antoniogonzalezgarrido"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Sígueme en LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/c/AntonioGonz%C3%A1lezGarrido"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Sígueme en Youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://github.com/authc0d3"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Sígueme en GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://gitlab.com/authcode"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Sígueme en GitLab"
+              >
+                <i class="fab fa-gitlab"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal alertas -->
+    <div id="alert-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-dismiss="modal"
+            >
+              <i class="fa fa-times"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Privacidad -->
+    <div id="privacity-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="fas fa-info-circle"></i> Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              El titular de este sitio web es Antonio González Garrido. El
+              acceso al sitio web de Antonio González Garrido es gratuito, no
+              obstante, todo el contenido informativo así como las imágenes
+              utilizadas son propiedad de Antonio González Garrido y no puede
+              ser copiado para su uso propio sin consentimiento del autor.
+            </p>
+            <h5>1. Uso y tratamiento de datos de carácter personal</h5>
+            <p class="text-justify">
+              Antonio González Garrido le informa que sus datos no serán
+              enviados ni almacenados en bases de datos o ficheros
+              automatizados. Los datos que proporcione mediante esta aplicación
+              serán enviados exclusivamente por e-mail. Si desea solicitar el
+              borrado de sus e-mails enviados mediante esta aplicación, puede
+              hacerlo dirigiendose a:
+              <a href="mailto:agonzalezgarrido@outlook.com"
+                >agonzalezgarrido@outlook.com</a
+              >
+            </p>
+            <h5>2. Medidas de seguridad</h5>
+            <p class="text-justify">
+              Antonio González Garrido le informa que tiene implantadas las
+              medidas de seguridad de índole técnica y organizativas necesarias
+              para garantizar la seguridad de sus datos de carácter personal y
+              evitar su alteración, pérdida, tratamiento y/o acceso no
+              autorizado, habida cuenta del estado de la tecnología, la
+              naturaleza de los datos almacenados y los riesgos a que están
+              expuestos, ya provengan de la acción humana o del medio físico o
+              natural. Todo ello, de conformidad con lo previsto en el artículo
+              9 de la LOPD y en el Real Decreto 1720/2007, de 21 de diciembre,
+              por el que se aprueba el Reglamento de desarrollo de la Ley
+              Orgánica 15/1999, de 13 de diciembre, de protección de datos de
+              carácter personal.
+            </p>
+            <h5>3. Menores de edad</h5>
+            <p class="text-justify">
+              Antonio González Garrido no se hace responsable de los datos de
+              menores que, sin poder conocer Antonio González Garrido este
+              hecho, se haya facilitado sin el consentimiento de los padres o
+              tutores.
+            </p>
+            <h5>4. Enlaces externos</h5>
+            <p class="text-justify">
+              Esta aplicación puede contener enlaces externos a otras
+              aplicaciones y/o páginas webs de terceras partes. Antonio González
+              Garrido no se hace responsable del contenido y enlaces que estas
+              otras aplicaciones o webs puedan contener.
+            </p>
+            <h5>5. Modificación de la política de privacidad</h5>
+            <p class="text-justify">
+              Antonio González Garrido se reserva el derecho a modificar su
+              Política de Privacidad, de acuerdo a su propio criterio, o
+              motivado por un cambio doctrinal de la Agencia Española de
+              Protección de Datos, legislativo o jurisprudencial. Cualquier
+              modificación de la Política de Privacidad será publicada al menos
+              diez días antes de su efectiva aplicación. El uso de la aplicación
+              móvil después de dichos cambios, implicará la aceptación de éstos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-dismiss="modal"
+            >
+              <i class="fa fa-times"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Cookies -->
+    <div id="cookies-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="fas fa-info-circle"></i> Cookies
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              Esta web utiliza cookies propias y/o de terceros para facilitar la
+              navegación y para obtener una mayor eficacia y personalización de
+              los servicios ofrecidos a los visitantes. Con el registro en la
+              web y/o la mera navegación (con el navegador habilitado para
+              aceptar cookies), el usuario acepta la instalación de cookies,
+              salvo que se oponga, según se detalla en esta Política de Cookies.
+            </p>
+            <p class="text-justify">
+              Nuestra Política de Cookies está sujeta a actualizaciones
+              periódicas. Su propósito es ayudar a comprender el uso que hacemos
+              de las cookies, la finalidad de las cookies utilizadas, así como
+              las opciones que existen para gestionarlas.
+            </p>
+            <p class="text-justify">
+              Los usuarios pueden acceder a esta información en todo momento a
+              través del link habilitado en la web. Asimismo, podrán modificar
+              sus preferencias sobre la aceptación de cookies a través de las
+              opciones de su navegador.
+            </p>
+            <h5>¿Qué es una cookie?</h5>
+            <p class="text-justify">
+              Una “Cookie” es un pequeño archivo de texto que un sitio web
+              almacena en el navegador del usuario. Las cookies facilitan el uso
+              y la navegación por una página web y son esenciales para el
+              funcionamiento de internet, aportando innumerables ventajas en la
+              prestación de servicios interactivos.
+            </p>
+            <p class="text-justify">
+              Las cookies se utilizan, por ejemplo, para gestionar la sesión del
+              usuario (reduciendo el número de veces que tiene que incluir su
+              contraseña), mejorar los servicios ofrecidos, o para adecuar los
+              contenidos de una página web a sus preferencias.
+            </p>
+            <p class="text-justify">
+              Las cookies pueden ser de “sesión”, por lo que se borrarán una vez
+              el usuario abandone la página web que las generó o “persistentes”,
+              que permanecen en su ordenador hasta una fecha determinada.
+            </p>
+            <p class="text-justify">
+              Asimismo las Cookies pueden ser “propias”, gestionadas por el
+              dominio al que el usuario accede y del que solicita un determinado
+              servicio (en este caso los dominios titularidad de BP Machinery) o
+              “cookies de terceros”, enviadas al equipo de usuario desde un
+              dominio diferente al que se accede.
+            </p>
+            <h5>Tipos de cookies usadas en la web</h5>
+            <h6>Cookies de uso interno (propias)</h6>
+            <p class="text-justify">
+              Esta web utiliza cookies de uso interno para el funcionamiento de
+              la web. En concreto esta web utiliza cookies para conocer las
+              preferencias acerca del uso de cookies.
+            </p>
+            <p class="text-justify">
+              La desactivación de estas cookies, mediante el bloqueo de cookies
+              en las opciones del navegador, puede impedir el funcionamiento
+              correcto de algunas de las funcionalidades de la web.
+            </p>
+            <p>
+              <strong>Cookies</strong><br />
+              "PHPSESSID", "AvisoCookies"<br /><br />
+              <strong>Propósito</strong><br />
+              Identificar las conexiones que se realizan al servidor y conocer
+              si el usuario ha aceptado seguir navegando con las cookies
+              activadas respectivamente.
+            </p>
+            <h4>Opciones sobre las cookies</h4>
+            <p class="text-justify">
+              En todo momento, y al menos, durante la instalación o puesta al
+              día del navegador, el usuario tiene la posibilidad de aceptar o
+              rechazar la instalación de cookies, o bien rechazar la instalación
+              de un determinado tipo de cookies, como las cookies de publicidad
+              y de terceros. Además, después de cada sesión puede eliminar todas
+              o algunas de las cookies almacenadas. Asimismo el usuario puede
+              activar:
+            </p>
+            <p class="text-justify">
+              1. La navegación privada, mediante la cual su navegador deja de
+              guardar el historial de navegación, contraseñas de sitios web,
+              cookies y otra información de las páginas que visita.
+            </p>
+            <p class="text-justify">
+              2. La función de no rastrear, por la que el navegador pide a los
+              sitios web que visita que no rastreen sus hábitos de navegación,
+              para por ejemplo, servirle publicidad de su interés en los sitios
+              que visita.
+            </p>
+            <p class="text-justify">
+              Le recomendamos que consulte la ayuda de su navegador para
+              informarse de las diferentes opciones sobre cómo gestionar las
+              cookies. A continuación incluimos los vínculos para gestionar
+              cookies en los navegadores más relevantes:
+            </p>
+            <p>
+              <strong>Google Chrome</strong><br />
+              <a
+                title="Abrir Google Chrome"
+                href="https://support.google.com/chrome/answer/95647?hl=es"
+                target="_blank"
+                rel="noopener"
+                >https://support.google.com/chrome/answer/95647?hl=es</a
+              >
+            </p>
+            <p>
+              <strong>Internet Explorer</strong><br />
+              <a
+                title="Abrir Internet Explorer"
+                href="http://windows.microsoft.com/es-ES/windows-vista/Block-or-allow-cookies"
+                target="_blank"
+                rel="noopener"
+                >http://windows.microsoft.com/es-ES/windows-vista/Block-or-allow-cookies</a
+              >
+            </p>
+            <p>
+              <strong>Firefox</strong><br />
+              <a
+                title="Abrir Mozilla Firefox"
+                href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"
+                target="_blank"
+                rel="noopener"
+                >http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</a
+              >
+            </p>
+            <p>
+              <strong>Safari</strong><br />
+              <a
+                title="Abrir Safari"
+                href="http://support.apple.com/kb/HT1677?viewlocale=es_ES"
+                target="_blank"
+                rel="noopener"
+                >http://support.apple.com/kb/HT1677?viewlocale=es_ES</a
+              >
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-dismiss="modal"
+            >
+              <i class="fa fa-times"></i> Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Css Loader -->
+    <div class="loader">
+      <div class="lds-dual-ring"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </body>
+</html>
